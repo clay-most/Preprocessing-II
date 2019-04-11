@@ -1,1 +1,19 @@
-// Navigation Styles here
+.nav {
+  .flex(space-between, center, row);
+  @media@phone {
+    .flex(center, center, column);
+  }
+  nav {
+    width: 50%;
+    .flex(space-evenly, stretch, row);
+    @media@phone {
+      width: 100%;
+      .flex(space-around, stretch, row);
+      margin: 20px 0;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
+}
